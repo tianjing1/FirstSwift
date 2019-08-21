@@ -9,12 +9,24 @@
 import UIKit
 import SnapKit
 
-class ViewController: UIViewController/*继承了UIKit提供的UIViewController类*/ {
-
+class HomeViewController: UIViewController/*继承了UIKit提供的UIViewController类*/ {
+    
+    init(){
+        super.init(nibName: nil, bundle: nil)
+        self.title = "追约"
+        self.tabBarItem.image = UIImage(named: "ic_tabbar_home_unselected")?.withRenderingMode(.alwaysOriginal)
+        self.tabBarItem.selectedImage = UIImage(named: "ic_tabbar_home_selected")?.withRenderingMode(.alwaysOriginal)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("storyboards are incompatible with truth and beauty")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.view.backgroundColor = UIColor.init(red: 255/255, green: 228/255, blue: 17/255, alpha: 1)
+        
         let label = UILabel.init(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 100))
         label.center = self.view.center
         label.backgroundColor = UIColor.init(red: 3/255, green: 169/255, blue: 244/255, alpha: 1)
@@ -23,7 +35,9 @@ class ViewController: UIViewController/*继承了UIKit提供的UIViewController�
         label.textAlignment = NSTextAlignment.center
         label.text = "hello world!"
         label.textColor = UIColor.white
+    
         self.view.addSubview(label)
+    
         
         label.snp.makeConstraints { (make) in
             make.height.equalTo(100)

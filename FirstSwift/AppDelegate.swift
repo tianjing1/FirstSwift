@@ -12,16 +12,31 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var tabBarController: UITabBarController?
+   
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         let screenBounds = UIScreen.main.bounds
         self.window = UIWindow(frame: screenBounds)
+        self.window?.backgroundColor = .white
+        tabBarController = CustomTabBarController()
+        tabBarController?.tabBar.tintColor = UIColor.red
         
-        let emptyViewController = ViewController(nibName: nil, bundle: nil)
-        self.window?.rootViewController = emptyViewController
         
+        let tab1Con =  UINavigationController.init(rootViewController: HomeViewController())
+        let tab2Con =  UINavigationController.init(rootViewController: DiscoverViewController())
+        let tab3Con =  UINavigationController.init(rootViewController: PersonalViewController())
+     
+
+        tabBarController?.viewControllers = [tab1Con, tab2Con, tab3Con]
+     
+        tabBarController?.selectedIndex = 0
+        tabBarController?.tabBar.tintColor = UIColor.black
+        tabBarController?.tabBar.barTintColor = UIColor.white
+        
+        self.window?.rootViewController = tabBarController
         self.window?.makeKeyAndVisible()
         
         return true
