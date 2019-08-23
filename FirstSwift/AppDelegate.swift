@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let screenBounds = UIScreen.main.bounds
         self.window = UIWindow(frame: screenBounds)
         self.window?.backgroundColor = .white
-        tabBarController = CustomTabBarController()
+        tabBarController = TabBarController()
         tabBarController?.tabBar.tintColor = UIColor.red
         
         
