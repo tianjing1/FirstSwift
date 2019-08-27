@@ -9,16 +9,21 @@
 /* Begin PBXBuildFile section */
 		0145009D660731350957660C /* Pods_FirstSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB575F2654F5FFA1E94BBEA2 /* Pods_FirstSwiftTests.framework */; };
 		3CA0E51846D4A311FC3AA8ED /* Pods_FirstSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0D54CF1239D9A51FDE1978F /* Pods_FirstSwift.framework */; };
+		657FAFE62314D56700DA8FE6 /* TracingListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657FAFE52314D56700DA8FE6 /* TracingListCell.swift */; };
+		657FAFE82314D70E00DA8FE6 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657FAFE72314D70E00DA8FE6 /* Api.swift */; };
 		65A2A36E2301885500CD6D24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A2A36D2301885500CD6D24 /* AppDelegate.swift */; };
 		65A2A3702301885500CD6D24 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A2A36F2301885500CD6D24 /* HomeViewController.swift */; };
 		65A2A3752301885700CD6D24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65A2A3742301885700CD6D24 /* Assets.xcassets */; };
 		65A2A3782301885700CD6D24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65A2A3762301885700CD6D24 /* LaunchScreen.storyboard */; };
 		65A2A3832301885800CD6D24 /* FirstSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A2A3822301885800CD6D24 /* FirstSwiftTests.swift */; };
 		65A2A38E2301885800CD6D24 /* FirstSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A2A38D2301885800CD6D24 /* FirstSwiftUITests.swift */; };
+		65B5AA8C231002A000067C99 /* DiscoverViewController+MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B5AA8B231002A000067C99 /* DiscoverViewController+MockData.swift */; };
 		65C6BFB9230B9D2500192F49 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C6BFB8230B9D2500192F49 /* DiscoverViewController.swift */; };
 		65C6BFBB230BA1CC00192F49 /* PersonalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C6BFBA230BA1CC00192F49 /* PersonalViewController.swift */; };
-		65C6BFBD230BC35300192F49 /* OtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C6BFBC230BC35300192F49 /* OtherViewController.swift */; };
+		65C6BFBD230BC35300192F49 /* TracingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C6BFBC230BC35300192F49 /* TracingListViewController.swift */; };
 		65C6BFBF230C390B00192F49 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C6BFBE230C390B00192F49 /* TabBarController.swift */; };
+		65C72FCF2313D84400DAF84F /* TracingListViewController+MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C72FCE2313D84400DAF84F /* TracingListViewController+MockData.swift */; };
+		65C72FD22314D52E00DAF84F /* DiscoverCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C72FD12314D52E00DAF84F /* DiscoverCell.swift */; };
 		6E6E65A9D29A027A3AD9A48E /* Pods_FirstSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D6A48990518561976ACB49D /* Pods_FirstSwiftUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +47,8 @@
 /* Begin PBXFileReference section */
 		0B56E138F846B4FCFE0A67C9 /* Pods-FirstSwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstSwiftUITests.release.xcconfig"; path = "Target Support Files/Pods-FirstSwiftUITests/Pods-FirstSwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2D6A48990518561976ACB49D /* Pods_FirstSwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirstSwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		657FAFE52314D56700DA8FE6 /* TracingListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracingListCell.swift; sourceTree = "<group>"; };
+		657FAFE72314D70E00DA8FE6 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		65A2A36A2301885500CD6D24 /* FirstSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65A2A36D2301885500CD6D24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65A2A36F2301885500CD6D24 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -54,10 +61,13 @@
 		65A2A3892301885800CD6D24 /* FirstSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65A2A38D2301885800CD6D24 /* FirstSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSwiftUITests.swift; sourceTree = "<group>"; };
 		65A2A38F2301885800CD6D24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65B5AA8B231002A000067C99 /* DiscoverViewController+MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DiscoverViewController+MockData.swift"; sourceTree = "<group>"; };
 		65C6BFB8230B9D2500192F49 /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		65C6BFBA230BA1CC00192F49 /* PersonalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalViewController.swift; sourceTree = "<group>"; };
-		65C6BFBC230BC35300192F49 /* OtherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherViewController.swift; sourceTree = "<group>"; };
+		65C6BFBC230BC35300192F49 /* TracingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracingListViewController.swift; sourceTree = "<group>"; };
 		65C6BFBE230C390B00192F49 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		65C72FCE2313D84400DAF84F /* TracingListViewController+MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TracingListViewController+MockData.swift"; sourceTree = "<group>"; };
+		65C72FD12314D52E00DAF84F /* DiscoverCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverCell.swift; sourceTree = "<group>"; };
 		A11C43DA497BE2A739548786 /* Pods-FirstSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstSwift.release.xcconfig"; path = "Target Support Files/Pods-FirstSwift/Pods-FirstSwift.release.xcconfig"; sourceTree = "<group>"; };
 		B75623B17613C4B06973F33B /* Pods-FirstSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstSwiftTests.release.xcconfig"; path = "Target Support Files/Pods-FirstSwiftTests/Pods-FirstSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
 		CB54B8F609DFAF2FA52513AF /* Pods-FirstSwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstSwiftUITests.debug.xcconfig"; path = "Target Support Files/Pods-FirstSwiftUITests/Pods-FirstSwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -120,15 +130,19 @@
 		65A2A36C2301885500CD6D24 /* FirstSwift */ = {
 			isa = PBXGroup;
 			children = (
+				65C72FD02314D4EC00DAF84F /* Views */,
 				65A2A36D2301885500CD6D24 /* AppDelegate.swift */,
 				65C6BFBE230C390B00192F49 /* TabBarController.swift */,
 				65A2A36F2301885500CD6D24 /* HomeViewController.swift */,
 				65C6BFB8230B9D2500192F49 /* DiscoverViewController.swift */,
 				65C6BFBA230BA1CC00192F49 /* PersonalViewController.swift */,
-				65C6BFBC230BC35300192F49 /* OtherViewController.swift */,
+				65C6BFBC230BC35300192F49 /* TracingListViewController.swift */,
 				65A2A3742301885700CD6D24 /* Assets.xcassets */,
 				65A2A3762301885700CD6D24 /* LaunchScreen.storyboard */,
 				65A2A3792301885700CD6D24 /* Info.plist */,
+				65B5AA8B231002A000067C99 /* DiscoverViewController+MockData.swift */,
+				65C72FCE2313D84400DAF84F /* TracingListViewController+MockData.swift */,
+				657FAFE72314D70E00DA8FE6 /* Api.swift */,
 			);
 			path = FirstSwift;
 			sourceTree = "<group>";
@@ -149,6 +163,15 @@
 				65A2A38F2301885800CD6D24 /* Info.plist */,
 			);
 			path = FirstSwiftUITests;
+			sourceTree = "<group>";
+		};
+		65C72FD02314D4EC00DAF84F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				65C72FD12314D52E00DAF84F /* DiscoverCell.swift */,
+				657FAFE52314D56700DA8FE6 /* TracingListCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		A06DBE4EE8406CC876F58469 /* Pods */ = {
@@ -394,12 +417,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				657FAFE62314D56700DA8FE6 /* TracingListCell.swift in Sources */,
 				65C6BFB9230B9D2500192F49 /* DiscoverViewController.swift in Sources */,
 				65A2A3702301885500CD6D24 /* HomeViewController.swift in Sources */,
 				65C6BFBF230C390B00192F49 /* TabBarController.swift in Sources */,
+				65B5AA8C231002A000067C99 /* DiscoverViewController+MockData.swift in Sources */,
+				657FAFE82314D70E00DA8FE6 /* Api.swift in Sources */,
+				65C72FD22314D52E00DAF84F /* DiscoverCell.swift in Sources */,
 				65C6BFBB230BA1CC00192F49 /* PersonalViewController.swift in Sources */,
+				65C72FCF2313D84400DAF84F /* TracingListViewController+MockData.swift in Sources */,
 				65A2A36E2301885500CD6D24 /* AppDelegate.swift in Sources */,
-				65C6BFBD230BC35300192F49 /* OtherViewController.swift in Sources */,
+				65C6BFBD230BC35300192F49 /* TracingListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

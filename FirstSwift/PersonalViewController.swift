@@ -27,5 +27,8 @@ class PersonalViewController: UIViewController {
         print("PersonalViewController has been loaded")
     
         self.view.backgroundColor = UIColor.gray
+        
+        //week3实现作业1:切换到tab3的时候显示tab4
+//        self.tabBarController?.viewControllers?.append(OtherViewController())
     }
 }
