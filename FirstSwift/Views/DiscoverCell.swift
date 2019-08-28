@@ -7,6 +7,7 @@
 //
 
 import SnapKit
+import SDWebImage
 class DiscoverCell: UITableViewCell {
     
     let thumbnailView = UIImageView()
@@ -55,8 +56,16 @@ class DiscoverCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func update(with image: UIImage, text: String, desc: String) {
-        self.thumbnailView.image = image
+    //使用SDWebImage方法来加载图片
+    func update(with showDictionary: [String: Any]) {
+        let name = showDictionary["name"] as? String ?? ""
+        let desc = showDictionary["description"] as? String ?? ""
+        let imageUrl = showDictionary["imageUrl"] as? String ?? ""
+        self.update(with: imageUrl, text: name, desc: desc)
+    }
+    
+    func update(with imageUrl: String, text: String, desc: String) {
+        self.thumbnailView.sd_setImage(with: URL(string: imageUrl))
         self.titleLabel.text = text
         self.descLabel.text = desc
         

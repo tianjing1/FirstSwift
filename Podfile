@@ -5,6 +5,9 @@ target 'FirstSwift' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   pod 'SnapKit', '~> 5.0.0'
+  pod 'Alamofire', '~>4.8.2'
+  pod 'SDWebImage', '~>5.1.0'
+  pod 'PKHUD', '~>5.3.0'
 
   # Pods for FirstSwift
 

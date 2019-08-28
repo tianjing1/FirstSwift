@@ -52,6 +52,7 @@ class TracingListCell: UITableViewCell {
             make.top.equalTo(self.contentView).offset(8)
             make.left.equalTo(thumbnailView.snp.right).offset(7)
             make.right.lessThanOrEqualTo(watchNumLabel.snp.left).offset(-7)
+            make.right.lessThanOrEqualTo(totalNumLabel.snp.left).offset(-7)
         }
         
         descLabel.snp.makeConstraints { (make) in
