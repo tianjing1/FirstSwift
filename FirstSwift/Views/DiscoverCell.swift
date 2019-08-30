@@ -7,10 +7,12 @@
 //
 
 import SnapKit
-import SDWebImage
+//import SDWebImage
+import Alamofire
+
 class DiscoverCell: UITableViewCell {
     
-    let thumbnailView = UIImageView()
+    var thumbnailView = UIImageView()
     let titleLabel = UILabel()
     let descLabel = UILabel()
     
@@ -56,7 +58,7 @@ class DiscoverCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    //使用SDWebImage方法来加载图片
+//    使用SDWebImage方法来加载图片
     func update(with showDictionary: [String: Any]) {
         let name = showDictionary["name"] as? String ?? ""
         let desc = showDictionary["description"] as? String ?? ""
@@ -64,8 +66,25 @@ class DiscoverCell: UITableViewCell {
         self.update(with: imageUrl, text: name, desc: desc)
     }
     
+//    func update(with showDictionary: [String: Any]) {
+//        let name = showDictionary["name"] as? String ?? ""
+//        let desc = showDictionary["description"] as? String ?? ""
+//        let imageurl = showDictionary["imageUrl"] as? String ?? ""
+//
+//        self.update(with: image, text: name, desc: desc)
+//    }
+    
     func update(with imageUrl: String, text: String, desc: String) {
-        self.thumbnailView.sd_setImage(with: URL(string: imageUrl))
+//        Alamofire.request(imageUrl).responseData { response in
+//            self.thumbnailView.image = UIImage(data: response.result.value!)
+//        }
+        
+        //        self.thumbnailView = UIImageView.init(named: "haier")
+        //        self.thumbnailView.sd_setImage(with: URL(string: imageUrl))
+        
+        Alamofire.request(imageUrl).responseImage { response in
+            self.thumbnailView.image = response.result.value
+        }
         self.titleLabel.text = text
         self.descLabel.text = desc
         

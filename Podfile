@@ -8,6 +8,8 @@ target 'FirstSwift' do
   pod 'Alamofire', '~>4.8.2'
   pod 'SDWebImage', '~>5.1.0'
   pod 'PKHUD', '~>5.3.0'
+  pod 'AlamofireImage', '~>3.5.2'
+
 
   # Pods for FirstSwift
 

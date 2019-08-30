@@ -44,8 +44,6 @@ class DiscoverViewController: UITableViewController {
         
     }
     
-   
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         HUD.show(.progress)
@@ -55,17 +53,6 @@ class DiscoverViewController: UITableViewController {
             HUD.flash(.success)
             }
         }
-        
-//        Api.shared.downloadPicture(picUrl: "http://lain.bgm.tv/pic/cover/l/f3/d0/265708_QDkDe.jpg"){
-//            print("运行了他")
-//        }
-    
-    
-//        PKHUD.sharedHUD.contentView = PKHUDSuccessView()
-//        PKHUD.sharedHUD.show()
-//        PKHUD.sharedHUD.hide(afterDelay: 1.0){ success in
-//        }
-
 
     //返回mockData文件中总数作为tableView的行数
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
